@@ -1,13 +1,89 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background-image: linear-gradient( 132.6deg,  rgba(71,139,214,1) 23.3%, rgba(37,216,211,1) 84.7% );
+}
+
+.contacts__navbar {
+    background-color: rgb(149, 215, 241);
+    display: grid;
+    grid-template-columns: 80% 10% 10%;
+    height: 70px;
+    border-bottom: solid 1px black;
+}
+
+.contacts__navbar>h1 {
+    text-transform: uppercase;
+    text-decoration: underline;
+    padding: 20px 20px;
+    margin: 0px;
+}
+
+.contacts__navbar a {
+    color: white;
+    text-align: center;
+    height: fit-content;
+    margin-top: 15px;
+    width: 150px;
+    padding: 10px 0px 5px 0px;
+    border: 1px solid rgb(52, 144, 197) ;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: rgb(51, 181, 214);
+    
+}
+
+.contacts__modal {
+    background-image: radial-gradient( circle farthest-corner at -2.9% 119.3%,  rgba(0,47,73,1) 0%, rgba(39,169,255,1) 100.7% );
+    height: 450px;
+    width: 600px;
+    box-shadow: 0px 5px 20px 10px rgb(55, 93, 168);
+    border-radius: 2px;
+    z-index: 1;
+
+}
+#modalHeader{
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.contacts__form {
+    height: 100%;
+    width: 100%;
+}
+
+.contacts__form div {
+    width: auto;
+    height: 45px;
+    margin: 30px;
+
+}
+
+input {
+    padding-left: 10px;
+    font-size: 15px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(97,186,255,1) 0%, rgba(166,239,253,1) 90.1% );        }
+
+input:focus{
+  border: 2px solid greenyellow;
+  box-shadow: 2px 2px 5px 2px rgb(238, 59, 59);
+
+}
+
+[type="submit"]{
+    word-spacing: 1px;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,221,214,1) 0%, rgba(51,102,255,1) 90% ); 
 }

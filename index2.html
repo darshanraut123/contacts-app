@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Montserrat+Alternates:ital@1&family=Montserrat:wght@200&family=Quicksand:wght@300;400&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            background-image: linear-gradient(132.6deg, rgba(71, 139, 214, 1) 23.3%, rgba(37, 216, 211, 1) 84.7%);
+        }
+
+        .contacts__navbar {
+            background-color: rgb(149, 215, 241);
+            height: 70px;
+            border-bottom: solid 1px black;
+        }
+
+        .contacts__navbar>h1 {
+            text-transform: uppercase;
+            text-decoration: underline;
+            padding: 20px 20px;
+            margin: 0px;
+        }
+
+        .contacts__container {
+            display: flex;
+            min-height: calc(100vh - 90px);
+            flex-direction: column;
+            margin: 10px 100px;
+        }
+
+
+
+
+        .styled-table {
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        }
+
+
+        .styled-table thead tr {
+            background-color: #9fdff8;
+            color: #ffffffd2;
+            text-align: left;
+        }
+
+        .styled-table th,
+        .styled-table td {
+            height: 80px;
+            text-align: left;
+            padding: 12px 15px;
+        }
+
+        .styled-table tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .styled-table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        .styled-table tbody tr:last-of-type {
+            border-bottom: 2px solid #79fae0;
+        }
+
+        .styled-table tbody tr.active-row {
+            font-weight: bold;
+            color: #148d75;
+        }
+
+        td input {
+            background-color: inherit;
+            height: 30px;
+            width: 60px;
+            border-radius: 10px;
+        }
+        .addContact
+{}
+
+    </style>
+</head>
+
+<body>
+    <div class="contacts__navbar">
+        <h1>react redux contact application</h1>
+    </div>
+    <div class="contacts__container">
+
+        <div class="addContact">
+            <input type="button" value="Add Contacts">
+        </div>
+
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</th>
+                    <td>Darshan</td>
+                    <td>darshanraut123@outlook.com</td>
+                    <td>9405686153</td>
+                    <td><input type="button" value="Edit"></td>
+                    <td><input type="button" value="Delete"></td>
+                </tr>
+                <tr class="active-row">
+                    <td>2</td>
+                    <td>Yogendra</td>
+                    <td>yogi123@outlook.com</td>
+                    <td>9405686153</td>
+                    <td><input type="button" value="Edit"></td>
+                    <td><input type="button" value="Delete"></td>
+                </tr>
+                <tr>
+                    <td>1</th>
+                    <td>Darshan</td>
+                    <td>darshanraut123@outlook.com</td>
+                    <td>9405686153</td>
+                    <td><input type="button" value="Edit"></td>
+                    <td><input type="button" value="Delete"></td>
+                </tr>
+                <tr class="active-row">
+                    <td>2</td>
+                    <td>Yogendra</td>
+                    <td>yogi123@outlook.com</td>
+                    <td>9405686153</td>
+                    <td><input type="button" value="Edit"></td>
+                    <td><input type="button" value="Delete"></td>
+                </tr>
+                <tr>
+                    <td>1</th>
+                    <td>Darshan</td>
+                    <td>darshanraut123@outlook.com</td>
+                    <td>9405686153</td>
+                    <td><input type="button" value="Edit"></td>
+                    <td><input type="button" value="Delete"></td>
+                </tr>
+                <tr class="active-row">
+                    <td>2</td>
+                    <td>Yogendra</td>
+                    <td>yogi123@outlook.com</td>
+                    <td>9405686153</td>
+                    <td><input type="button" value="Edit"></td>
+                    <td><input type="button" value="Delete"></td>
+                </tr>
+                <tr>
+                    <td>1</th>
+                    <td>Darshan</td>
+                    <td>darshanraut123@outlook.com</td>
+                    <td>9405686153</td>
+                    <td><input type="button" value="Edit"></td>
+                    <td><input type="button" value="Delete"></td>
+                </tr>
+                <tr class="active-row">
+                    <td>2</td>
+                    <td>Yogendra</td>
+                    <td>yogi123@outlook.com</td>
+                    <td>9405686153</td>
+                    <td><input type="button" value="Edit"></td>
+                    <td><input type="button" value="Delete"></td>
+                </tr>
+                <tr>
+                    <td>1</th>
+                    <td>Darshan</td>
+                    <td>darshanraut123@outlook.com</td>
+                    <td>9405686153</td>
+                    <td><input type="button" value="Edit"></td>
+                    <td><input type="button" value="Delete"></td>
+                </tr>
+                <tr class="active-row">
+                    <td>2</td>
+                    <td>Yogendra</td>
+                    <td>yogi123@outlook.com</td>
+                    <td>9405686153</td>
+                    <td><input type="button" value="Edit"></td>
+                    <td><input type="button" value="Delete"></td>
+                </tr>
+                <tr>
+                    <td>1</th>
+                    <td>Darshan</td>
+                    <td>darshanraut123@outlook.com</td>
+                    <td>9405686153</td>
+                    <td><input type="button" value="Edit"></td>
+                    <td><input type="button" value="Delete"></td>
+                </tr>
+                <tr class="active-row">
+                    <td>2</td>
+                    <td>Yogendra</td>
+                    <td>yogi123@outlook.com</td>
+                    <td>9405686153</td>
+                    <td><input type="button" value="Edit"></td>
+                    <td><input type="button" value="Delete"></td>
+                </tr>
+                <tr>
+                    <td>1</th>
+                    <td>Darshan</td>
+                    <td>darshanraut123@outlook.com</td>
+                    <td>9405686153</td>
+                    <td><input type="button" value="Edit"></td>
+                    <td><input type="button" value="Delete"></td>
+                </tr>
+                <tr class="active-row">
+                    <td>2</td>
+                    <td>Yogendra</td>
+                    <td>yogi123@outlook.com</td>
+                    <td>9405686153</td>
+                    <td><input type="button" value="Edit"></td>
+                    <td><input type="button" value="Delete"></td>
+                </tr>
+                <tr>
+                    <td>1</th>
+                    <td>Darshan</td>
+                    <td>darshanraut123@outlook.com</td>
+                    <td>9405686153</td>
+                    <td><input type="button" value="Edit"></td>
+                    <td><input type="button" value="Delete"></td>
+                </tr>
+                <tr class="active-row">
+                    <td>2</td>
+                    <td>Yogendra</td>
+                    <td>yogi123@outlook.com</td>
+                    <td>9405686153</td>
+                    <td><input type="button" value="Edit"></td>
+                    <td><input type="button" value="Delete"></td>
+                </tr>
+                <tr>
+                    <td>1</th>
+                    <td>Darshan</td>
+                    <td>darshanraut123@outlook.com</td>
+                    <td>9405686153</td>
+                    <td><input type="button" value="Edit"></td>
+                    <td><input type="button" value="Delete"></td>
+                </tr>
+                <tr class="active-row">
+                    <td>2</td>
+                    <td>Yogendra</td>
+                    <td>yogi123@outlook.com</td>
+                    <td>9405686153</td>
+                    <td><input type="button" value="Edit"></td>
+                    <td><input type="button" value="Delete"></td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </div>
+
+
+    </div>
+</body>
+
+</html>
